@@ -238,13 +238,13 @@ public class StringList implements MyList{
         }
     }
 
+    private void grow(){
+        StringList = Arrays.copyOf(StringList, StringList.length * 2);
+    }
+
     private static void swapElements(Integer[] arr, int indexA, int indexB) {
         int tmp = arr[indexA];
         arr[indexA] = arr[indexB];
         arr[indexB] = tmp;
-    }
-
-    private void grow(){
-        StringList = Arrays.copyOf(StringList, StringList.length * 2);
     }
 }
