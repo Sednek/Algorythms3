@@ -30,7 +30,7 @@ public class StringList implements MyList{
             resize(this.StringList.length + 1);
         }
         if (pointer == this.StringList.length) {
-            grow();;
+            grow();
         }
         this.StringList[pointer++] = item;
         return item;
